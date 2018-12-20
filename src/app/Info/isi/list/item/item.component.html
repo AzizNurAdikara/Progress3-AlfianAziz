@@ -1,0 +1,18 @@
+
+<div class="card mb-3">
+    <a 
+    style="cursor:pointer;"
+    [routerLink]="[index]"
+    routerLinkActive="active"
+    class="list-group-item clearfix"
+    >
+  <img class="card-img-top" [src]="isi.imagePath" 
+  alt="{{isi.name}}" 
+  class="img-responsive" 
+  style="height:250px;width:500px;"></a>
+  <div class="card-body">
+    <h5 class="card-title">{{isi.name}}</h5>
+    <p class="card-text">{{isi.description}}</p>
+  </div>
+</div>
+

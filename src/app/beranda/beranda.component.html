@@ -1,0 +1,71 @@
+<div class="vid-container" style="position:relative; height:100vh; overflow:hidden;" >
+  <video id="Video1" class="bgvid back" autoplay="true" muted="muted" preload="auto" loop  style="right: 0; bottom: 0;min-width: 100%; min-height: 10%;
+  width: auto; height: auto; z-index: -100;">
+        <source src="../src/app/img/Abstract.mp4" type="video/mp4">
+  </video>
+  <div class="inner-container" style="position:absolute; top:calc(50vh - 200px); left:calc(50vw - 400px);height:100%; overflow:hidden;">
+        <div class="container-fluid" style="padding-top:0%">
+            <div class="row" style="height:100%">
+                <div class="col-1 "></div>
+                <div class="col-3 "><button class="btn btn-lg btn-success btn-block mt-4 mb-4" type="submit">Kab Madiun</button></div>
+                <div class="col-1 "></div>
+                <div class="col-3 "><button class="btn btn-lg btn-success btn-block mt-4 mb-4" type="submit">Kota Madiun</button></div>
+                <div class="col-3 "></div>
+            </div>
+          <div class="row" style="height:100%">
+              <div class="col-2 ">
+                  <img src="../src/app/img/kabmadiun.png" alt="Gambar - 1" width="300px" height="360px" style="margin-left:45px;">
+              </div>
+              <div class="col-10" >
+                  <img src="../src/app/img/logokotamadiun.png" alt="Gambar - 1" width="500px" height="360px" style="margin-left:120px; padding-top:0%;">
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <hr color="orange" width="120%" align="center">
+  <div class="container-fluid">
+      <div class="row">
+           <img src="../src/app/img/logo/Logo02.png" width="533px" height="379px" style="margin-left:30%; padding-top:10%">
+      </div>
+  </div>
+
+<!--card -->
+<div class="container-fluid" style="padding-top:10%">
+    <hr color="black" width="120%" align="center">
+    <div class="row" style="background-image:url('http://karangsari-rembang.sideka.id/wp-content/uploads/sites/2461/2018/06/Wallpaper-Pemandangan-4.jpg')">
+      <div class="container-fluid"style="background-image:url('https://image.dhgate.com/0x0s/f2-albu-g7-M00-D3-D0-rBVaSVq8XmWAbUKRABm3A9XurKw505.jpg/3d-papel-de-parede-mural-decor-foto-cen-rio.jpg');  background-repeat: no-repeat;  background-size: cover;" >
+              <hr color="orange" width="120%" align="center">
+              <h1 style="margin-left:40%; color:black">Icon Madiun</h1>
+              <hr color="orange" width="120%" align="center">
+      </div>
+    <div class="col-4" style="padding-top:10px; padding-bottom:10px" *ngFor="let beranda of berandas">
+      <div class="card" style="width: 18rem;margin-left:50px">
+          <a href="#" (click)=onSelected()>
+            <img class="card-img-top" [src]="beranda.imagePath"  
+            alt="{{beranda.name}}" class="img-responsive" width="285px" height="179px"> </a>
+            <div class="card-body">
+              <h5 class="card-title">{{beranda.name}}</h5>
+            <p class="card-text">{{beranda.description}}</p>
+            </div>
+    </div>
+  </div> 
+  
+    <hr color="black" width="120%" align="center">
+  </div>
+</div>
+<!--card -->
+<hr color="black" width="120%" align="center">
+
+    <div class="container-fluid" style="padding-top:5%">
+     
+      </div>
+      
+
+  <div class="vid-container" style="position:relative; height:20vh; overflow:hidden; ">
+      <video id="Video1" class="bgvid back" autoplay="true" muted="muted" preload="auto" loop style="right: 0; bottom: 0;min-width: 100%; min-height: 10%;
+      width: auto; height: auto; z-index: -100; position:fixed;">
+            <source src="../src/app/img/sawah.mp4" type="video/mp4">
+      </video>
+</div>
+
